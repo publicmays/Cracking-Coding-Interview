@@ -14,7 +14,7 @@
  * 			dependencies : (d,a), (b,f), (d,b), (a,f), (c,d)
  *		OUTPUT : f, e, a b, d, c
  */
-Stack<Project> findBuildOrder(String[] projets, String[][] dependencies) {
+Stack<Project> findBuildOrder(String[] projects, String[][] dependencies) {
 	Graph graph = buildGraph(projects, dependencies);
 	return orderProjects(graph.getNodes());
 }
