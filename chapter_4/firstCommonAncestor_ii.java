@@ -37,5 +37,5 @@ TreeNode getSibling(TreeNode node) {
 /**
  * O(t) time - t size of subtree for 1st common ancestor
  * Worst case - O(n) - # nodes in tree
- * each node in subtree is searched once
+ * each node in subtree is searched once 
  */
