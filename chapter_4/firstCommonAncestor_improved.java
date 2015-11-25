@@ -94,4 +94,36 @@ Result commonAncestorHelper(TreeNode root, TreeNode p, TreeNode q) {
  *			null					null
  *	}
  *}
+ * rx = (10, 3, 5)
+ * ry = (30, 3, 5)
+ *
+ *CAH(20, 3, 5) => return rx;
+ *{
+ *	rx = CAH(10, 3, 17) => return rx;
+ *	{
+ *		rx = CAH(5, 3, 17) => Result(5, true)
+ *		{
+ *			rx = CAH(3, 3, 17) => Result(3, false)
+ *			{
+ *				1. rx = CAH(null, 3, 17)	ry = CAH(null, 3, 17)
+ *					null					null	
+ *			}
+ *			ry = CAH(7, 3, 17) => Result(null, false)
+ *			
+ *		}
+ *
+ *		ry = CAH(15, 3, 17)  => Result(null, false)
+ *		{
+ *			rx = CAH(null, 3, 17) => Result(null, false)
+ *				null
+ *
+ *			ry = CAH(17, 3, 17) => Result(null, false)
+ *			{
+ *				1.	rx = CAH(null, 3, 17)	ry = CAH(null, 3, 17)
+ *					null					null
+ *			}
+ *
+ *		}
+ *	}
+ *
  */
