@@ -32,3 +32,11 @@ boolean matchTree(TreeNode r1, TreeNode r2) {
 	else 
 		return matchTree(r1.left, r2.left) && matchTree(r1.right, r2.right);
 }
+
+/**
+ * n - # nodes T1
+ * m - # nodes T2
+ * we call matchTree k (# occurences of T2's root in T1)
+ * Time - O(n + km)
+ * Memory - O(log(n) + log(m))
+ */
