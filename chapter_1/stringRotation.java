@@ -6,7 +6,6 @@
  */
 
 boolean stringRotation (String s1, String s2) {
-	int len = s1.length();
 	if (s1.length() == s2.length() && s1.length() > 0) {
 		StringBuilder rotation = new StringBuilder();
 		rotation = s1+s1;
@@ -14,3 +13,10 @@ boolean stringRotation (String s1, String s2) {
 	}
 	return false;
 }
+
+/**
+ * A - length S1
+ * B - length S2
+ * isSubString - O(A+B) time
+ * stringRotation - O(N) time
+ */
