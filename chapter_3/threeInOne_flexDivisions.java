@@ -31,7 +31,7 @@ public class MultiStack {
 		info = new StackInfo[numberOfStacks];
 		for (int i = 0; i < numberOfStacks; ++i) 
 			info[i] = new StackInfo(defaultSize * i, defaultSize);
-		values = new int[num berOfStacks * defaultSize];
+		values = new int[numberOfStacks * defaultSize];
 	}
 	public void push(int stackNum, int value) throws FullStackException {
 		if (allStacksAreFull())	throw new FullStackException();
