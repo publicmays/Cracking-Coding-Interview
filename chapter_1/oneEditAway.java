@@ -9,7 +9,7 @@ boolean oneEditAway(String first, String second) {
 	else if (first.length() + 1 == second.length())
 		return insert(first, second);
 	else if (firstLength == second.length() + 1)
-		return insert(first, second);
+		return insert(second, first);
 }
 
 boolean replace(String s1, s2) {
