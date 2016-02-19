@@ -34,7 +34,7 @@ int rank(int[] array, int left, int right, int rank) {
 
 // partition so all elements <= pivot come before all elements > pivot
 int partition(int[] array, int left, int right, int pivot) {
-	whiel (left <= right) {
+	while (left <= right) {
 		if (array[left] > pivot) {
 			swap(array, left, right); 
 			--right;
