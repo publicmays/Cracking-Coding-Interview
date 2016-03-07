@@ -13,7 +13,7 @@ int convertToNumber(Node head) {
 	int num = head.data;
 	head = head.next;
 	while (head) {
-		digit *= 10
+		digit = count * 10
 		num += head * digit;
 		head = head.next;
 	}
