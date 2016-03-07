@@ -16,6 +16,7 @@ int convertToNumber(Node head) {
 		digit = count * 10
 		num += head * digit;
 		head = head.next;
+		++count;
 	}
 	return num;
 }
