@@ -59,7 +59,7 @@ public class Graph {
 
 	public Project getOrCreateNode(String name) {
 		if(!map.containsKey(name)) {
-			Project node = new Project(node);
+			Project node = new Project(name);
 			nodes.add(node);
 			map.put(name, node);
 		}
